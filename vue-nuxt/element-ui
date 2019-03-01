@@ -1,0 +1,6 @@
+# element-ui使用時のユニットテストの感所
+テスト時にelement uiのボタンクリックのイベントのtriggerが発生しない。  
+対応方法ー＞ボタン側の実装でnativeを指定する。ただ、振る舞いが変わる可能性があるので注意  
+```
+<el-button @click.native="onclick"/>
+```
